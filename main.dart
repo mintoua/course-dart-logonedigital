@@ -8,6 +8,11 @@ void main(){
   double prixPlat = 2560;
   int idPlat = 2;
   bool isDisponible;
-
+  
   print("Nom : " + nomPlat);
+  print("description : " + descriptionPlat);
+  print("prixPlat : $prixPlat");
+  print("idPlat : $idPlat");
+  print("isDiponible : $isDisponible");
+
 }
