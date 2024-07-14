@@ -7,8 +7,8 @@ void main(){
   String descriptionPlat = "Plat traditionnel";
   double prixPlat = 2560;
   int idPlat = 2;
-  bool isDisponible;
-  
+  bool isDisponible = true;
+
   print("Nom : " + nomPlat);
   print("description : " + descriptionPlat);
   print("prixPlat : $prixPlat");
