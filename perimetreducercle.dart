@@ -1,5 +1,5 @@
 void main(){
-     ///varible
+       ///varible
   const double pi = 3.1415;
   int rayon = 10;
   int h = 2;
@@ -16,4 +16,19 @@ void main(){
     {
       print("majeur");
     }
-  }
+
+    double temp = 37.5;
+    if (temp<0)
+    {
+      print("solide");
+    }
+      else if (temp>0)
+      {
+        print("liquide");
+      }
+        else
+        {
+          print("gazeux");
+        }
+
+}
