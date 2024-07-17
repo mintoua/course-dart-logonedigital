@@ -1,4 +1,5 @@
 void main(){
+
   int revenu = 0;
   double loyer = 0.0;
   double nutrition = 0.0;
@@ -15,5 +16,6 @@ void main(){
     print("le solde est positif.");
     } else {
       print("le solde est négatif.");
+    }
 
- }
+  }
