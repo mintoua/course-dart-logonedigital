@@ -1,11 +1,10 @@
 void main(){
-
-  int revenu = 0;
-  double loyer = 0.0;
-  double nutrition = 0.0;
-  double loisir = 0.0;
-  double transport = 0.0;
-  double autreDepense = 0.0;
+  double loisir = 30000;
+  double loyer = 55000;
+  double nutrition = 40500;
+  double transport = 15000;
+  double autreDepense = 30000;
+  int revenu = 250000;
 
   double totalDepense = loyer + nutrition + loisir + transport + autreDepense;
   double solde = revenu - totalDepense;
