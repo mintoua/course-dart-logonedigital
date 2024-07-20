@@ -14,7 +14,7 @@ void main() {
   int placesDisponibles = 50;
   if (nombrePersonnes <= placesDisponibles) {
     print("Réservation confirmée pour ${nombrePersonnes} personnes à ${lieuReservation} le ${dateReservation}.");
-    print("Montant total à payer : \$${montantTotal}");
+    print("Montant total à payer : ${montantTotal} FCFA");
     placesDisponibles -= nombrePersonnes; // Mettre à jour les places disponibles
     print("Places restantes : ${placesDisponibles}");
   } else {
