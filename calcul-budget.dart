@@ -20,10 +20,10 @@ void main() {
 
   // Vérification du solde restant
   if (soldeRestant > 0) {
-    print("Vous avez un solde positif de \$${soldeRestant}.");
+    print("Vous avez un solde positif de ${soldeRestant} FCFA.");
   } else if (soldeRestant == 0) {
     print("Vous avez exactement dépensé ce que vous avez gagné.");
   } else {
-    print("Vous avez un solde négatif de \$${soldeRestant.abs()}.");
+    print("Vous avez un solde négatif de ${soldeRestant} FCFA.");
   }
 }
