@@ -8,6 +8,18 @@ void main(){
     print("Il fait froid");
   }
 
+  int nombre = 13; 
+  if(nombre % 2 == 0)
+  { 
+    print("$nombre est paire"); 
+  }
+  else 
+  { 
+    print("$nombre est impaire"); 
+  }   
+  print("fin du programme"); 
+
+
   //Syntaxe switch
 
   var choix = 1;
