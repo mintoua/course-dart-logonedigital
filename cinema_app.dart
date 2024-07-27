@@ -1,5 +1,6 @@
 import 'dart:io';
 
+
 void main() {
   // Déclaration des constantes pour les prix des billets
   const double prixFilmA = 6500;
