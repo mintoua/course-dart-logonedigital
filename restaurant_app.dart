@@ -1,12 +1,13 @@
 import 'dart:io';
 
 void main() {
-  // Déclaration des constantes pour les prix des plats
+  
   String nomPlat1 = "Pizza";
   String nomPlat2 = "Chapati";
   String nomPlat3 = "Salade";
   String nomPlat4 = "Boisson";
 
+  // Déclaration des constantes pour les prix des plats
   const double prixPizza = 6000;
   const double prixChapati = 1500;
   const double prixSalade = 1000;

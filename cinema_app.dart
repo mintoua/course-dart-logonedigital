@@ -15,9 +15,9 @@ void main() {
   do {
     // Affichage du menu des films
     print("\n=== Menu de Réservation de Billets de Cinéma ===");
-    print("1. Film A (\$$prixFilmA par billet)");
-    print("2. Film B (\$$prixFilmB par billet)");
-    print("3. Film C (\$$prixFilmC par billet)");
+    print("1. Film A ($prixFilmA FCFA par billet)");
+    print("2. Film B ($prixFilmB FCFA par billet)");
+    print("3. Film C ($prixFilmC FCFA par billet)");
     print("4. Terminer la réservation");
     print("Choisissez un film (1-4) :");
 
@@ -30,19 +30,19 @@ void main() {
         print("Combien de billets pour Film A ?");
         nombreBillets = int.parse(stdin.readLineSync() ?? '0');
         coutTotal += prixFilmA * nombreBillets;
-        print("$nombreBillets billets pour Film A ajoutés. Total actuel : \$$coutTotal");
+        print("$nombreBillets billets pour Film A ajoutés. Total actuel : $coutTotal FCFA");
         break;
       case '2':
         print("Combien de billets pour Film B ?");
         nombreBillets = int.parse(stdin.readLineSync() ?? '0');
         coutTotal += prixFilmB * nombreBillets;
-        print("$nombreBillets billets pour Film B ajoutés. Total actuel : \$$coutTotal");
+        print("$nombreBillets billets pour Film B ajoutés. Total actuel : $coutTotal FCFA");
         break;
       case '3':
         print("Combien de billets pour Film C ?");
         nombreBillets = int.parse(stdin.readLineSync() ?? '0');
         coutTotal += prixFilmC * nombreBillets;
-        print("$nombreBillets billets pour Film C ajoutés. Total actuel : \$$coutTotal");
+        print("$nombreBillets billets pour Film C ajoutés. Total actuel : $coutTotal FCFA");
         break;
       case '4':
         continuer = false;
@@ -54,6 +54,6 @@ void main() {
 
   // Affichage du récapitulatif de la réservation
   print("\n=== Récapitulatif de la réservation ===");
-  print("Total à payer : \$$coutTotal");
+  print("Total à payer : $coutTotal FCFA");
   print("Merci pour votre réservation !");
 }
