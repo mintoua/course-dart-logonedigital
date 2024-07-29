@@ -1,7 +1,19 @@
 import 'dart:io';
+double coutTotal = 0.0;
 
-void main() {
-  
+//Ici nous avons utilisé le code du TD 2 pour découper en fonction réutilisable
+
+//La fonction qui permet d'afficher le récapitulatif de la commande
+void recapitulatifCommande(){
+    // Affichage du récapitulatif de la commande
+  print("\n=== Récapitulatif de la commande ===");
+  print("Total à payer : $coutTotal FCFA");
+  print("Merci pour votre commande !");
+}
+
+
+//La fonction qui permet d'afficher le menu du restaurant et de traiter les commandes.
+void afficherMenu(){
   String nomPlat1 = "Pizza";
   String nomPlat2 = "Chapati";
   String nomPlat3 = "Salade";
@@ -15,10 +27,8 @@ void main() {
 
   // Variables pour stocker les choix de l'utilisateur et le coût total
   String choix;
-  double coutTotal = 0.0;
   bool continuer = true;
-
-  do {
+    do {
     // Affichage du menu
     print("\n=== Menu de Restaurant ===");
     print("1. $nomPlat1 ($prixPizza FCFA)");
@@ -56,9 +66,10 @@ void main() {
         print("Choix invalide, veuillez réessayer.");
     }
   } while (continuer);
+  recapitulatifCommande();
+}
 
-  // Affichage du récapitulatif de la commande
-  print("\n=== Récapitulatif de la commande ===");
-  print("Total à payer : $coutTotal FCFA");
-  print("Merci pour votre commande !");
+void main() {
+  //Appel de la fonction afficher MENU
+  afficherMenu();
 }
