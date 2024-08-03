@@ -31,7 +31,7 @@ void gestionRestaurant() {
         ajouterCommande(plats, choix, commandes);
       case '4':
         ajouterCommande(plats, choix, commandes);
-      case '5':
+      case '0':
         afficherRecap(commandes, plats);
         continuer = false;
         break;
@@ -75,11 +75,11 @@ void afficherMenu(Map<String,double> plats)
 {
   print("\n === Menu de Restaurant ===\n");
   int i = 1;
-  plats.forEach((plat, prix) {
-    print("$i. $plat $prix FCFA");
+  plats.forEach((nomPlat, prixPlat) {
+    print("$i. $nomPlat $prixPlat FCFA");
     i++;
   });
-  print("5. Terminer la commande");
+  print("0. Terminer la commande");
 }
 
 /// Affiche le récapitulatif des commandes et calcule le total à payer.
