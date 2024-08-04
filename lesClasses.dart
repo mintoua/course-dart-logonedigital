@@ -1,12 +1,11 @@
 // POO, Progammation Oriente Object
-class Telephone
-  {
+class Telephone{
     //les attributs
     String marque;
     String couleur;
     double prix; 
     // les methode
-    void demarage(){}
+    void demarer(){}
     void mouvement(){}
     
   }
